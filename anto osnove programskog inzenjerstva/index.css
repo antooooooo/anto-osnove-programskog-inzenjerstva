@@ -1,0 +1,120 @@
+body {
+    font-family:courier new;
+    text-align:justify;	
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background: url(background-photo.jpg) center center cover no-repeat fixed;
+    margin: 0;
+    padding: 0;
+	background-image: url(09index.jpg);}
+
+.intro {
+    height:100%;
+    width:100%;
+    margin:auto;
+    display:table;
+    top:0;
+    background-size:cover;}
+
+.intro.inner {
+    display:table-cell;
+    vertical-align:middle;
+    width:100%;
+    max-width:none;}
+
+.content {
+	margin:0 auto;
+	margin-top:100px;
+	text-align: center;}
+
+.content h1 {
+	text-shadow: 0px 0px 300px #000;
+	font-size:200%;}
+	
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;}
+
+.navbar-links {
+    height: 100%;}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;}
+
+.navbar-links li {
+    list-style: none;}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;}
+
+.brand-title  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;}
+
+.brand-title li {
+    list-style: none;}
+
+.brand-title li a {
+    display: block;
+    text-decoration: none;
+    color: white;}
+
+.navbar-links li:hover {
+    background-color: yellowgreen;}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;}
+
+@media (max-width: 800px) {
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;}
+
+.toggle-button {
+    display: flex;}
+
+.navbar-links {
+    display: none;
+    width: 100%;}
+
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;}
+
+.navbar-links ul li {
+    text-align: center;}
+
+.navbar-links ul li a {
+    padding: .5rem 1rem;}
+
+.navbar-links.active {
+    display: flex;}}
